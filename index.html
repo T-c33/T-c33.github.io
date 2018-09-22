@@ -18,18 +18,19 @@
 			<section id="header">
 				<div class="inner">
 					<span class="icon major fa-cloud"></span>
-					<h1>Hi, I'm <strong>Photon</strong>, another fine<br />
-					little freebie from <a href="http://html5up.net">HTML5 UP</a>.</h1>
-					<p>Accumsan feugiat mi commodo erat lorem ipsum, sed magna<br />
-					lobortis feugiat sapien sed etiam volutpat accumsan.</p>
-					<ul class="actions special">
+					<h1>Hi, I'm <strong>T-c</strong>, a nice day, isn't it!<br />
+					Welcome to my page !<a href="https://www.google.com">Google there</a>.</h1>
+					<p id="time1" style="color: #F6F3FB; font-size: 30px; font-weight: bold; font-family: SimHei;"></p>
+
+		<ul class="actions special">
 						<li><a href="#one" class="button scrolly">Discover</a></li>
 					</ul>
 				</div>
 			</section>
-
+		
 		<!-- One -->
 			<section id="one" class="main style1">
+				
 				<div class="container">
 					<div class="row gtr-150">
 						<div class="col-6 col-12-medium">
@@ -122,7 +123,19 @@
 					</ul>
 				</div>
 			</section>
+<script>
+    function mytime(){
+        var a = new Date();
+        var b = a.toLocaleTimeString();
+        var c = a.toLocaleDateString();
+        document.getElementById("time1").innerHTML = c+"&nbsp"+b;
+        }
+    setInterval(function() {mytime()},1000);
+</script>
 
+---------------------
+
+本文来自 _Cike_ 的CSDN 博客 ，全文地址请点击：https://blog.csdn.net/qq_35952946/article/details/56012654?utm_source=copy 
 		<!-- Five -->
 		<!--
 			<section id="five" class="main style1">
